@@ -1,14 +1,13 @@
-import CostomNavbar from "./CostomNavbar"
+import CostomNavbar from "./CostomNavbar";
 
-
-const Base=({title='Welcome to our website',children})=> {
+const Base = ({ title = "Welcome to our website", children }) => {
   return (
     <div className="container-fluid p-0 m-0">
-    <CostomNavbar/>
+      <CostomNavbar />
 
-    {children}
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default Base
+export default Base;

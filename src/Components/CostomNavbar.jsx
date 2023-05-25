@@ -36,10 +36,10 @@ const CostomNavbar = () => {
             </NavItem>
 
             <NavItem>
-            <NavLink tag={ReactLink} to="/shop">
-              Shop
-            </NavLink>
-          </NavItem>
+              <NavLink tag={ReactLink} to="/shop">
+                Shop
+              </NavLink>
+            </NavItem>
 
             <NavItem>
               <NavLink tag={ReactLink} to="/about">
@@ -74,7 +74,6 @@ const CostomNavbar = () => {
               <User size={32} />
             </NavLink>
           </NavLink>
-          
         </Collapse>
       </Navbar>
     </div>
