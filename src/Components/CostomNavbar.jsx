@@ -21,7 +21,7 @@ const CostomNavbar = () => {
 
   return (
     <div>
-      <Navbar color="warning" expand="md" fixed="">
+      <Navbar color="warning" dark expand="md" fixed="">
         <NavbarBrand tag={ReactLink} to="/">
           First Step
         </NavbarBrand>
@@ -36,14 +36,14 @@ const CostomNavbar = () => {
             </NavItem>
 
             <NavItem>
-              <NavLink tag={ReactLink} to="/about">
-                About
-              </NavLink>
-            </NavItem>
+            <NavLink tag={ReactLink} to="/shop">
+              Shop
+            </NavLink>
+          </NavItem>
 
             <NavItem>
-              <NavLink tag={ReactLink} to="/shop">
-                Shop
+              <NavLink tag={ReactLink} to="/about">
+                About Us
               </NavLink>
             </NavItem>
 
@@ -62,12 +62,6 @@ const CostomNavbar = () => {
             </UncontrolledDropdown>
           </Nav>
 
-          <NavLink>
-            <NavLink tag={ReactLink} to="/login">
-              <User size={32} />
-            </NavLink>
-          </NavLink>
-
           <div>
             <MagnifyingGlass size={32} />
           </div>
@@ -75,7 +69,12 @@ const CostomNavbar = () => {
             <ShoppingCart size={32} />
           </div>
 
-          <NavbarText>Youtube</NavbarText>
+          <NavLink>
+            <NavLink tag={ReactLink} to="/login">
+              <User size={32} />
+            </NavLink>
+          </NavLink>
+          
         </Collapse>
       </Navbar>
     </div>

@@ -7,6 +7,8 @@ import { Shop } from "./Pages/Shop";
 import { Services } from "./Pages/Services";
 import { Login } from "./Pages/Login";
 import { ContactUs } from "./Pages/ContactUs";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
