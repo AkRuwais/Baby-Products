@@ -1,0 +1,16 @@
+#root {
+  background-color: #ed7070;
+}
+.products {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.card-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer {
+  background-color: #e69900;
+}

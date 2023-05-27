@@ -1,3 +1,4 @@
+import "./Login.css";
 import React, { useState } from "react";
 import {
   MDBContainer,
@@ -27,33 +28,10 @@ export const Login = () => {
   return (
     <Base>
       <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
-        <MDBTabs
-          pills
-          justify
-          className="mb-3 d-flex flex-row justify-content-between"
-        >
-          <MDBTabsItem>
-            <MDBTabsLink
-              onClick={() => handleJustifyClick("tab1")}
-              active={justifyActive === "tab1"}
-            >
-              Login
-            </MDBTabsLink>
-          </MDBTabsItem>
-          <MDBTabsItem>
-            <MDBTabsLink
-              onClick={() => handleJustifyClick("tab2")}
-              active={justifyActive === "tab2"}
-            >
-              Register
-            </MDBTabsLink>
-          </MDBTabsItem>
-        </MDBTabs>
-
-        <MDBTabsContent>
+        <MDBTabsContent className="TabsPane">
           <MDBTabsPane show={justifyActive === "tab1"}>
             <div className="text-center mb-3">
-              <p>Sign in with:</p>
+              <h1>Sign in with </h1>
 
               <div
                 className="d-flex justify-content-between mx-auto"
@@ -122,7 +100,9 @@ export const Login = () => {
               <a href="!#">Forgot password?</a>
             </div>
 
-            <MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
+            <MDBBtn id="singin" className="mb-4 w-100">
+              Sign in
+            </MDBBtn>
             <p className="text-center">
               Not a member? <a href="#!">Register</a>
             </p>
@@ -209,6 +189,29 @@ export const Login = () => {
             <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
           </MDBTabsPane>
         </MDBTabsContent>
+        <MDBTabs
+          id="tab"
+          pills
+          justify
+          className="mb-3 d-flex flex-row justify-content-between"
+        >
+          <MDBTabsItem>
+            <MDBTabsLink
+              onClick={() => handleJustifyClick("tab1")}
+              active={justifyActive === "tab1"}
+            >
+              Login
+            </MDBTabsLink>
+          </MDBTabsItem>
+          <MDBTabsItem>
+            <MDBTabsLink
+              onClick={() => handleJustifyClick("tab2")}
+              active={justifyActive === "tab2"}
+            >
+              Register
+            </MDBTabsLink>
+          </MDBTabsItem>
+        </MDBTabs>
       </MDBContainer>
     </Base>
   );

@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.TabsPane {
+  background-color: #f5aa82;
+  border-radius: 10px 10px 0 0;
+    width:651px ;
+}
+#tab {
+  background-color: #df956d;
+  border-radius: 0 0 10px 10px;
+  width: 651px;
+  position: relative;
+  left: 8px;
+}
