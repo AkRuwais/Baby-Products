@@ -24,8 +24,9 @@ const CostomNavbar = () => {
   return (
     <div>
       <Navbar className="Navbar" color="" dark expand="md" fixed="">
-        <NavbarBrand tag={ReactLink} to="/">
-          First Step
+        <NavbarBrand className="brandname" tag={ReactLink} to="/">
+        <img style={{width:"120px"}} src="https://o.remove.bg/downloads/83046197-81d9-4528-aea3-03b09b3f34b0/First_step-removebg-preview.png" alt="" />  
+        <h1>First Step</h1>
         </NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
 

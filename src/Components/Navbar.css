@@ -1,3 +1,7 @@
 .Navbar{
-    background-color: #2222ad;
+    height: 90px;
+    background-color: #15457e;
+}
+.brandname{
+    font-style: italic;
 }
