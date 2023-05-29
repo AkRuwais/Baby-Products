@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink as ReactLink } from "react-router-dom";
-import { ShoppingCart, MagnifyingGlass, User } from "phosphor-react";
+import { ShoppingCart,User } from "phosphor-react";
 import Search from "../Pages/Search";
 import "./Navbar.css";
 import {
@@ -17,7 +17,6 @@ import {
   DropdownItem,
 } from "reactstrap";
 
-
 const CostomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,8 +24,12 @@ const CostomNavbar = () => {
     <div>
       <Navbar className="Navbar" color="" dark expand="md" fixed="">
         <NavbarBrand className="brandname" tag={ReactLink} to="/">
-        <img style={{width:"120px"}} src="https://o.remove.bg/downloads/83046197-81d9-4528-aea3-03b09b3f34b0/First_step-removebg-preview.png" alt="" />  
-        <h1>First Step</h1>
+          <img
+            style={{ width: "120px" }}
+            src="https://o.remove.bg/downloads/83046197-81d9-4528-aea3-03b09b3f34b0/First_step-removebg-preview.png"
+            alt=""
+          />
+          <h2>First Step</h2>
         </NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
 
@@ -66,8 +69,7 @@ const CostomNavbar = () => {
           </Nav>
 
           <div></div>
-            <Search />
-          
+          <Search />
 
           <div>
             <ShoppingCart size={32} />
