@@ -18,7 +18,7 @@ export const Home = () => {
 
       <Base>
       <Slides/>
-        <div className="card-1">
+        <div className="cards">
           <Card
             style={{
               width: "18rem",
@@ -95,6 +95,7 @@ export const Home = () => {
           }}
           >
             <img
+            style={{height:"250px"}}
               alt="Sample"
               src="https://i0.wp.com/makeupandbeautyblog.in/wp-content/uploads/2018/06/11-Best-Baby-Product-Brands-In-India-1.png?resize=654%2C400&ssl=1"
             />
@@ -118,8 +119,9 @@ export const Home = () => {
           }}
           >
             <img
+            style={{height:"208px"}}
               alt="Sample"
-              src="https://i0.wp.com/makeupandbeautyblog.in/wp-content/uploads/2018/06/11-Best-Baby-Product-Brands-In-India-1.png?resize=654%2C400&ssl=1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRsubycX6L8JPSXW3QpAhFHC1tQLndiqDzFQ&usqp=CAU"
             />
             <CardBody>
               <CardTitle tag="h5">Card title</CardTitle>
@@ -146,7 +148,8 @@ export const Home = () => {
           />
         </div>
 
-        <div className="card-2">
+        
+        <div className="cards">
         <Card
         style={{
           width: "18rem",

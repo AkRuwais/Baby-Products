@@ -1,16 +1,22 @@
 #root {
-  background-color: #ed7070;
+  background-color: #ffffff;
 }
 .products {
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
 }
-.card-1 {
+.cards {
   margin: 5px;
-  /* padding: 5px; */
+  padding: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+/* .card-2{
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
 

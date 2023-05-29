@@ -38,7 +38,7 @@ function Slide() {
           className="d-block w-100"
           style={{
             width: "100vw",
-            height: "auto",
+            height: "500px",
           }}
           src="https://bebekingdom.pk/wp-content/uploads/2022/02/1-1024x283.jpg"
           alt="Third slide"

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink as ReactLink } from "react-router-dom";
-import { ShoppingCart,User } from "phosphor-react";
+import { ShoppingCart, User } from "phosphor-react";
 import Search from "../Pages/Search";
 import "./Navbar.css";
 import {
@@ -71,9 +71,9 @@ const CostomNavbar = () => {
           <div></div>
           <Search />
 
-          <div>
+          <NavLink tag={ReactLink} to="/cart">
             <ShoppingCart size={32} />
-          </div>
+          </NavLink>
 
           <NavLink tag={ReactLink} to="/login">
             <User size={32} />
