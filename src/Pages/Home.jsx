@@ -1,5 +1,7 @@
 import Base from "../Components/Base";
 import "./Home.css";
+import Footer from "../Components/Footer";
+import Slides from "./Slides "
 import {
   Card,
   CardBody,
@@ -12,21 +14,15 @@ import {
 export const Home = () => {
   return (
     <>
-      <Base>
-        <div className="products">
-          <img
-            style={{
-              width: "1349px",
-            }}
-            src="https://www.zubaidas.com/media/weltpixel/owlcarouselslider/images/z/u/zubiadas-slider_8-may.jpg"
-            alt=""
-          />
-        </div>
+    
 
+      <Base>
+      <Slides/>
         <div className="card-1">
           <Card
             style={{
               width: "18rem",
+              height:"27rem"
             }}
           >
             <img
@@ -47,9 +43,10 @@ export const Home = () => {
           </Card>
 
           <Card
-            style={{
-              width: "18rem",
-            }}
+          style={{
+            width: "18rem",
+            height:"27rem"
+          }}
           >
             <img
               alt="Sample"
@@ -69,9 +66,10 @@ export const Home = () => {
           </Card>
 
           <Card
-            style={{
-              width: "18rem",
-            }}
+          style={{
+            width: "18rem",
+            height:"27rem"
+          }}
           >
             <img
               alt="Sample"
@@ -91,9 +89,10 @@ export const Home = () => {
           </Card>
 
           <Card
-            style={{
-              width: "18rem",
-            }}
+          style={{
+            width: "18rem",
+            height:"27rem"
+          }}
           >
             <img
               alt="Sample"
@@ -113,9 +112,10 @@ export const Home = () => {
           </Card>
 
           <Card
-            style={{
-              width: "18rem",
-            }}
+          style={{
+            width: "18rem",
+            height:"27rem"
+          }}
           >
             <img
               alt="Sample"
@@ -137,20 +137,24 @@ export const Home = () => {
 
         <div>
           <img
-            style={{
-              width: "1349px",
-            }}
+          style={{
+            width: "100vw",
+            height: "auto",
+          }}
             src="https://justborngarments.com/wp-content/uploads/2022/07/banner.jpg"
             alt=""
           />
         </div>
 
+        <div className="card-2">
         <Card
-          style={{
-            width: "18rem",
-          }}
+        style={{
+          width: "18rem",
+          height:"27rem"
+        }}
         >
           <img
+          style={{height:"250px"}}
             alt="Sample"
             src="https://img.paisawapas.com/ovz3vew9pw/2023/03/10172943/Rectangle-1Top-7-Best-Baby-Product-Brands-in-India-year.png"
           />
@@ -168,11 +172,13 @@ export const Home = () => {
         </Card>
 
         <Card
-          style={{
-            width: "18rem",
-          }}
+        style={{
+          width: "18rem",
+          height:"27rem"
+        }}
         >
           <img
+          style={{height:"250px"}}
             alt="Sample"
             src="https://egrocery.asia/wp-content/uploads/2018/08/baby-care-product.jpg"
           />
@@ -190,11 +196,13 @@ export const Home = () => {
         </Card>
 
         <Card
-          style={{
-            width: "18rem",
-          }}
+        style={{
+          width: "18rem",
+          height:"27rem"
+        }}
         >
           <img
+          style={{height:"250px"}}
             alt="Sample"
             src="https://www.johnsonsbaby.in/sites/jbaby_in/files/johnsons-baby-powder-blossoms-front.jpg"
           />
@@ -204,19 +212,20 @@ export const Home = () => {
               Card subtitle
             </CardSubtitle>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card‘s content.
+              Some quick example 
             </CardText>
             <Button>Button</Button>
           </CardBody>
         </Card>
 
         <Card
-          style={{
-            width: "18rem",
-          }}
+        style={{
+          width: "18rem",
+          height:"27rem"
+        }}
         >
           <img
+          style={{height:"250px"}}
             alt="Sample"
             src="https://media6.ppl-media.com/mediafiles/blogs/CGUO_2_G_Vb_Ht_as_Fpf_T_Eivxv_YW_Gdu_Q_Oict8_KI_8_N_Ii_Z9amabx_Npwro_B8_LGIBWUNN_s_X_Iw_L4_B07_N9_R513s_Exm_WI_Dcw_Nqev_O_Qma_E5_G_Pc_Qlq_Th_EM_Ptiv3cofn3i_Gd_B9bryc_V6_T6_Vg_PQ_0642999b12"
           />
@@ -234,11 +243,13 @@ export const Home = () => {
         </Card>
 
         <Card
-          style={{
-            width: "18rem",
-          }}
+        style={{
+          width: "18rem",
+          height:"27rem"
+        }}
         >
           <img
+          style={{height:"210px"}}
             alt="Sample"
             src="https://hamleysgumlet.gumlet.io/product/491902533/665/491902533_2.jpg"
           />
@@ -254,10 +265,9 @@ export const Home = () => {
             <Button>Button</Button>
           </CardBody>
         </Card>
+        </div>
 
-        <footer>
-          <h1>By</h1>
-        </footer>
+        <Footer />
       </Base>
     </>
   );

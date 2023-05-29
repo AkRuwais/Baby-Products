@@ -7,10 +7,10 @@
   /* justify-content: center; */
 }
 .card-1 {
+  margin: 5px;
+  /* padding: 5px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer {
-  background-color: #e69900;
-}
+

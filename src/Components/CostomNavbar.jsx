@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link, NavLink as ReactLink } from "react-router-dom";
+import { NavLink as ReactLink } from "react-router-dom";
 import { ShoppingCart, MagnifyingGlass, User } from "phosphor-react";
+import Search from "../Pages/Search";
+import "./Navbar.css";
 import {
   Collapse,
   Navbar,
@@ -13,15 +15,15 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from "reactstrap";
+
 
 const CostomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <Navbar color="warning" dark expand="md" fixed="">
+      <Navbar className="Navbar" color="" dark expand="md" fixed="">
         <NavbarBrand tag={ReactLink} to="/">
           First Step
         </NavbarBrand>
@@ -62,20 +64,20 @@ const CostomNavbar = () => {
             </UncontrolledDropdown>
           </Nav>
 
-          <div>
-            <MagnifyingGlass size={32} />
-          </div>
+          <div></div>
+            <Search />
+          
+
           <div>
             <ShoppingCart size={32} />
           </div>
 
-          <NavLink>
-            <NavLink tag={ReactLink} to="/login">
-              <User size={32} />
-            </NavLink>
+          <NavLink tag={ReactLink} to="/login">
+            <User size={32} />
           </NavLink>
         </Collapse>
       </Navbar>
+      <div></div>
     </div>
   );
 };
