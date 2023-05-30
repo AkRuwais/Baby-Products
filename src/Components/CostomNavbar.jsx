@@ -3,6 +3,7 @@ import { NavLink as ReactLink } from "react-router-dom";
 import { ShoppingCart, User } from "phosphor-react";
 import Search from "../Pages/Search";
 import "./Navbar.css";
+import First from "../../public/First.png";
 import {
   Collapse,
   Navbar,
@@ -24,11 +25,7 @@ const CostomNavbar = () => {
     <div>
       <Navbar className="Navbar" color="" dark expand="md" fixed="">
         <NavbarBrand className="brandname" tag={ReactLink} to="/">
-          <img
-            style={{ width: "120px" }}
-            src="https://o.remove.bg/downloads/83046197-81d9-4528-aea3-03b09b3f34b0/First_step-removebg-preview.png"
-            alt=""
-          />
+          <img style={{ width: "100px" }} src={First} alt="" />
           <h2>First Step</h2>
         </NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
@@ -72,11 +69,11 @@ const CostomNavbar = () => {
           <Search />
 
           <NavLink tag={ReactLink} to="/cart">
-            <ShoppingCart size={32} />
+            <ShoppingCart style={{ color: "white" }} size={32} />
           </NavLink>
 
           <NavLink tag={ReactLink} to="/login">
-            <User size={32} />
+            <User style={{ color: "white" }} size={32} />
           </NavLink>
         </Collapse>
       </Navbar>
