@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import Slides from "./Slides ";
 import ProductList from "./ProductList";
 
-export default function Home  ()  {
+export default function Home() {
   return (
     <>
       <Base>
@@ -25,4 +25,4 @@ export default function Home  ()  {
       </Base>
     </>
   );
-};
+}

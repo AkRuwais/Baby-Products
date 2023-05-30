@@ -17,14 +17,13 @@ export default function ProductCard(props) {
 
   const handlecart = (event) => {
     setcart([...cart, event]);
-    console.log(event,"event---------");
-    // navigate("/cart");
+    console.log(event, "event---------");
     console.log(cart);
   };
 
   return (
     <div>
-      <Card >
+      <Card>
         <CardBody>
           <CardTitle tag="h5">{props.name}</CardTitle>
           <CardText>{props.description}</CardText>
