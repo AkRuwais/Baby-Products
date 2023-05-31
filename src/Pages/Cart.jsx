@@ -12,6 +12,7 @@ export default function () {
         {cart.map((data) => {
           return (
             <Card key={data.id}>
+           
               <h2>{data.name}</h2>
               <button>Remove</button>
               <button>Buy</button>

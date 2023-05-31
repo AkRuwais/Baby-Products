@@ -22,7 +22,7 @@ const CostomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="mainnavbar">
       <Navbar className="Navbar" color="" dark expand="md" fixed="">
         <NavbarBrand className="brandname" tag={ReactLink} to="/">
           <img style={{ width: "100px" }} src={First} alt="" />

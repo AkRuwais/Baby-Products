@@ -1,5 +1,10 @@
 {
-    "users":[
-        {"name":"shafeeq"}
-    ]
+  "users": [
+    {
+      "fname": "ruwais",
+      "uname": "dfghdfgb",
+      "pwd": "12334",
+      "id": 1
+    }
+  ]
 }

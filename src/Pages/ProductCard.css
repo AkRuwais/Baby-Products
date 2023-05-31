@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.card {
+  height: 460px;
+  width: 275px;
+}
+/* button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+} */

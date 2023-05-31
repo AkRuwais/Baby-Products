@@ -1,7 +1,13 @@
-.Navbar{
-    height: 90px;
-    background-color: #2277de;
+.Navbar {
+  height: 90px;
+  background-color: #2277de;
+ 
 }
-.brandname{
-    font-style: italic;
+.brandname {
+  font-style: italic;
+}
+.mainnavbar{
+    position: sticky;
+    top:0px;
+    z-index: 1;
 }

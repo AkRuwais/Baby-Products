@@ -1,22 +1,10 @@
 #root {
-  background-color: #ffffff;
+  background-color: #fb9a9a;
 }
 .products {
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
 }
-.cards {
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-/* .card-2{
-  margin: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
+
 

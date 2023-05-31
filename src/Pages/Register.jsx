@@ -1,11 +1,10 @@
-import React from 'react';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./Register.css";
 import { useState } from "react";
 import axios from "axios";
 
-export default function Login() {
+function Register() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,21 +12,25 @@ export default function Login() {
     const formData = Object.fromEntries(frm.entries());
     console.log(formData);
 
-    axios.get("http://localhost:3000/users",)
+    axios.post("http://localhost:3000/users",formData)
 
 
   };
   return (
     <Form onSubmit={handleSubmit} className="form">
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <h1>Login</h1>
-        
+        <h1>Sign up</h1>
+        <Form.Label>Full Name</Form.Label>
+        <Form.Control name="fname" type="name" placeholder="Enter full name" />
+        <Form.Text className="text-muted"></Form.Text>
 
         <Form.Label>User Name</Form.Label>
         <Form.Control name="uname" type="name" placeholder="Enter user name" />
         <Form.Text className="text-muted"></Form.Text>
 
-        
+        <Form.Label>Email address</Form.Label>
+        <Form.Control namr="email" type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -38,9 +41,8 @@ export default function Login() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
-      
     </Form>
   );
 }
 
-
+export default Register;
