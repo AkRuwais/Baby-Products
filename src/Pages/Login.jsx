@@ -38,7 +38,7 @@ export default function Login() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
-      <p>Not a member ?<a href="/signup">Signup</a></p>
+      <p>Not a member ?<a href="/register">Signup</a></p>
     </Form>
   );
 }
