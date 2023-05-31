@@ -65,8 +65,8 @@ const CostomNavbar = () => {
             </UncontrolledDropdown>
           </Nav>
 
-          <div></div>
-          <Search />
+          <div><Search  /></div>
+          
 
           <NavLink tag={ReactLink} to="/cart">
             <ShoppingCart style={{ color: "white" }} size={32} />

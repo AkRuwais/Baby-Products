@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./Search.css"
 
 export default function Search() {
   const [searchText, setSearchText] = useState("");
@@ -12,14 +13,14 @@ export default function Search() {
   };
 
   return (
-    <div>
+    <div className="search">
       <input
         type="text"
         placeholder="search"
         value={searchText}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>search</button>
+      <button style={{borderRadius:"10px"}} onClick={handleSearch}>search</button>
     </div>
   );
 }

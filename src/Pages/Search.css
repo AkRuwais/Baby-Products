@@ -1,0 +1,16 @@
+.search{
+   height: 50px
+}
+button{
+    background-color: #2de96b;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    
+    
+}
+input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+}

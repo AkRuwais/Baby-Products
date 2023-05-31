@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import { About } from "./Pages/About";
 import { Shop } from "./Pages/Shop";
 import { Services } from "./Pages/Services";
-import  Login  from "./Pages/Login";
+import Login from "./Pages/Login";
 import { ContactUs } from "./Pages/ContactUs";
 import Register from "./Pages/Register";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";

@@ -5,16 +5,13 @@ import { useState } from "react";
 import axios from "axios";
 
 function Register() {
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const frm = new FormData(event.target);
     const formData = Object.fromEntries(frm.entries());
     console.log(formData);
 
-    axios.post("http://localhost:3000/users",formData)
-
-
+    axios.post("http://localhost:3000/users", formData);
   };
   return (
     <Form onSubmit={handleSubmit} className="form">
